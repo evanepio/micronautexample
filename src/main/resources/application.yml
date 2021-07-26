@@ -6,3 +6,13 @@ endpoints:
     enabled: true
     sensitive: false
 
+municipalities:
+  - name: Stratford
+    province: Prince Edward Island
+    population: 9706
+  - name: Saint John
+    province: New Brunswick
+    population: 126202
+  - name: Charlottetown
+    province: Prince Edward Island
+    population: 126202
