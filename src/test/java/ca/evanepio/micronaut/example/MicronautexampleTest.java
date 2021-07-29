@@ -1,4 +1,4 @@
-package ca.evanepio.micronaut;
+package ca.evanepio.micronaut.example;
 
 import io.micronaut.runtime.EmbeddedApplication;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;

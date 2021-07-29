@@ -1,4 +1,4 @@
-package ca.evanepio.micronaut;
+package ca.evanepio.micronaut.example;
 
 import io.micronaut.core.annotation.Introspected;
 

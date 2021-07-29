@@ -1,4 +1,4 @@
-package ca.evanepio.micronaut;
+package ca.evanepio.micronaut.example;
 
 import javax.inject.Singleton;
 import java.util.Arrays;
