@@ -16,3 +16,10 @@ municipalities:
   - name: Charlottetown
     province: Prince Edward Island
     population: 126202
+
+datasources:
+  default:
+    url: ${JDBC_URL:`jdbc:mysql://localhost:3306/classicmodels`}
+    username: ${JDBC_USER:mydb_user}
+    password: ${JDBC_PASSWORD:myDB_passw0rd!}
+    driverClassName: ${JDBC_DRIVER:com.mysql.cj.jdbc.Driver}

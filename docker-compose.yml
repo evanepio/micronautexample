@@ -1,0 +1,26 @@
+version: '3.2'
+services:
+  mysqldb:
+    image: mysql
+    environment:
+      MYSQL_DATABASE: classicmodels
+      MYSQL_USER: mydb_user
+      MYSQL_PASSWORD: myDB_passw0rd!
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db/mysql:/docker-entrypoint-initdb.d
+  postgresqldb:
+    image: postgres
+    environment:
+      POSTGRES_DB: some_db_name
+      POSTGRES_USER: some_user
+      POSTGRES_PASSWORD: passw0rd4PG
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db/postgresql:/docker-entrypoint-initdb.d
